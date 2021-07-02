@@ -1,0 +1,84 @@
+:root {
+  --primaryColor : #620DF8;
+  --secondaryColor : #13CFA8;
+  --offWhite : #F2F2F2;
+  --white : #FFFF;
+  --black : #040404;
+  --grey : #707070;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 1.5rem;
+  --border: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+@font-face {
+  font-family: josefin;
+  src: url(./fonts/JosefinSans-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: josefin;
+  src: url(./fonts/JosefinSans-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: josefin;
+  src: url(./fonts/JosefinSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: josefin;
+  src: url(./fonts/JosefinSans-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: josefin;
+  src: url(./fonts/JosefinSans-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: josefin;
+  line-height: 1.5;
+  background: var(--offWhite);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--black);
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  color: var(--grey);
+}
