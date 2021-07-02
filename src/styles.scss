@@ -122,6 +122,8 @@ p {
   .links {
     flex-direction: row !important;
     column-gap: 1.5rem;
+    padding: 0 !important;
+    box-shadow: none !important;
   }
   .nav-toggle {
     display: none;
