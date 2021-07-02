@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
-      linksContainerRef.current.style.height = `${linksHeight + 65}px`;
+      linksContainerRef.current.style.height = `${linksHeight + 20}px`;
     } else {
       linksContainerRef.current.style.height = "0px";
     }
@@ -25,11 +25,11 @@ const Navbar = () => {
           <div className="nav-header">
             <Logo className="logo" />
             <button
-                className="nav-toggle"
-                onClick={() => setShowLinks(!showLinks)}
-              >
-                <FaBars />
-              </button>
+              className="nav-toggle"
+              onClick={() => setShowLinks(!showLinks)}
+            >
+              <FaBars />
+            </button>
           </div>
           <div className="nav-menu links-container" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>

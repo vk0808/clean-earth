@@ -1,10 +1,10 @@
 :root {
-  --primaryColor : #620DF8;
-  --secondaryColor : #13CFA8;
-  --offWhite : #F2F2F2;
-  --white : #FFFF;
-  --black : #040404;
-  --grey : #707070;
+  --primaryColor: hsl(262deg 94% 51%);
+  --secondaryColor: hsl(168deg 83% 44%);
+  --offWhite: hsl(0deg 0% 95%);
+  --white: hsl(0deg 0% 100%);
+  --black: hsl(0deg 0% 2%);
+  --grey: hsl(0deg 0% 44%);
   --transition: all 0.3s linear;
   --spacing: 0.05rem;
   --radius: 1.5rem;
@@ -55,19 +55,42 @@ p {
 }
 
 .nav-center {
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .nav-header {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .logo {
     width: 100px;
   }
 
-  .nav-menu ul {
-    display: flex;
-    column-gap: 1.5rem;
+  .nav-toggle {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+    
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    width: 100vw;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+  }
+  .links {
+    display: inline-flex;
+    padding: 3rem;
+    flex-direction: column;
+    row-gap: 0.5rem;
     align-items: center;
+    box-shadow: var(--light-shadow);
+
   
     a {
       color: var(--black);
@@ -86,4 +109,25 @@ p {
   border: 1px solid var(--black);
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .links {
+    flex-direction: row !important;
+    column-gap: 1.5rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+    display: contents;
+  }
 }
