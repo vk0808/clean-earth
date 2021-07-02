@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="51" viewBox="0 0 51 51">
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="51" viewBox="0 0 144 51">
   <defs>
     <clipPath id="clip-path">
       <rect id="Rectangle_1" data-name="Rectangle 1" width="51" height="51" transform="translate(-2 -2)" fill="#fff"/>
     </clipPath>
   </defs>
-  <g id="logo" transform="translate(2 2)" clip-path="url(#clip-path)">
+  <g id="logo-2" data-name="logo" transform="translate(2 2)" clip-path="url(#clip-path)">
     <path id="Path_1" data-name="Path 1" d="M2.114,33.463A23,23,0,0,0,4.1,37a6.23,6.23,0,0,1,7.678-6.168A13.9,13.9,0,0,1,10.317,27.5a15.08,15.08,0,0,1-.386-1.819A13.849,13.849,0,0,1,23.359,9.8h.378a13.689,13.689,0,0,1,7.094,1.991,6.258,6.258,0,0,1,6.11-7.685h.052A22.987,22.987,0,0,0,30.186.915L30.157.908a.939.939,0,0,1-.132-.03A23.641,23.641,0,0,0,1.052,16.671h0a.189.189,0,0,1-.013.049c0,.016-.008.038-.014.057A23.714,23.714,0,0,0,2.114,33.463Z" transform="translate(0 0)" fill="#13cfa8"/>
     <path id="Path_2" data-name="Path 2" d="M48.947,48.956a23.7,23.7,0,0,0,2.584-30.418.53.53,0,0,1-.056-.073.458.458,0,0,1-.031-.041c-.176-.251-.36-.506-.56-.753a22.805,22.805,0,0,0-1.938-2.2,4.9,4.9,0,0,0-6.925,6.924A13.685,13.685,0,0,1,45.45,28.04a.773.773,0,0,1,.041.133,14,14,0,0,1,.2,7.342.785.785,0,0,1-.045.126A13.83,13.83,0,0,1,32.69,46.071h-.026a13.836,13.836,0,0,1-8.5-2.558.63.63,0,0,1-.1-.065l-.01-.007a.98.98,0,0,1-.138-.116l-.29-.212a10.4,10.4,0,0,1-.847-.729c-.116-.1-.257-.232-.388-.367a4.9,4.9,0,0,0-6.924,6.924c.064.064.126.128.2.186a23.55,23.55,0,0,0,12.276,6.348l.06.014a23.852,23.852,0,0,0,4.193.372h0a23.747,23.747,0,0,0,16.756-6.92Z" transform="translate(-8.545 -8.547)" fill="#620df8"/>
   </g>
+  <text id="Clean_Earth" data-name="Clean
+Earth" transform="translate(67 20)" fill="#040404" font-size="20" font-family="AzonixRegular, Azonix"><tspan x="0" y="0">Clean</tspan><tspan x="0" y="25">Earth</tspan></text>
 </svg>
