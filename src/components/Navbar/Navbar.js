@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "./logo.svg";
+import "../../styles.scss";
 
 const Navbar = () => {
   return (
@@ -8,15 +9,23 @@ const Navbar = () => {
         <div className="nav-center">
           <Logo className="logo" />
           <div className="nav-menu">
-            <a className="nav-link" href="#problem">
-              problem
-            </a>
-            <a className="nav-link" href="#solution">
-              solution
-            </a>
-            <button className="pledge" type="button">
-              take pledge
-            </button>
+            <ul>
+              <li>
+                <a className="nav-link" href="#problem">
+                  problem
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="#solution">
+                  solution
+                </a>
+              </li>
+              <li>
+                <button className="pledge" type="button">
+                  take pledge
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
