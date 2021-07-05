@@ -4,6 +4,7 @@
   --offWhite: hsl(0deg 0% 95%);
   --white: hsl(0deg 0% 100%);
   --black: hsl(0deg 0% 2%);
+  --lightGrey: hsl(0deg 0% 83%);
   --grey: hsl(0deg 0% 44%);
   --transition: all 0.3s linear;
   --spacing: 0.05rem;
@@ -82,15 +83,15 @@ p {
     position: absolute;
     z-index: 999;
     text-align: center;
+    background: var(--lightGrey);
   }
+
   .links {
     display: inline-flex;
     padding: 3rem;
     flex-direction: column;
     row-gap: 0.5rem;
     align-items: center;
-    box-shadow: var(--light-shadow);
-
   
     a {
       color: var(--black);
