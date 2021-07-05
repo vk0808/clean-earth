@@ -134,3 +134,59 @@ p {
     display: contents;
   }
 }
+
+// Hero Section
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  
+  .left {
+    position: relative;
+    min-height: 300px;
+    background: url('./components/Hero/waste-bg.png') no-repeat center center;
+    background-size: 80%;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+  }
+  .hero-title::first-letter {
+    text-transform: uppercase;
+  }
+  .right {
+    text-align: center;
+    flex: 2;
+    order: 1;
+    padding: 2rem 1rem 1.5rem;
+  }
+  .hero-desc {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .hero {
+    flex-direction: row !important;
+    align-items: center;
+    padding: 0;
+  }
+  .left {
+    flex: 3;
+    order: 2;
+    height: 500px;
+  }
+  .right {
+    text-align: left !important;
+    padding-top: 4rem !important;
+    padding-left: 4rem !important;
+  }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .hero-desc {
+    padding: 0 !important;
+  }
+}
