@@ -257,7 +257,7 @@ p {
 }
 
 // The Cause
-.cause {
+.cause, .effect {
   margin-top: calc(var(--spacingDesktop) * 1.5);
 
   .sub-heading {
@@ -282,12 +282,13 @@ p {
     padding: 1rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   .problem {
     padding-left: 4rem;
     padding-right: 4rem;
 
-    .desc {
+    .desc, .listing {
       width: 70%;
     }
   }
