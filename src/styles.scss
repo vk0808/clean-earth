@@ -236,3 +236,39 @@ p {
     margin-bottom: var(--spacingDesktop);
   }
 }
+
+// Problem
+.sub-heading {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.main-heading {
+  text-transform: uppercase;
+  margin-bottom: var(--spacingMobile);
+}
+.problem {
+  background: var(--white);
+  margin-top: var(--spacingDesktop);
+  padding-top: calc(var(--spacingDesktop) * 2);
+
+  .second-para {
+    margin-top: var(--spacingDesktop);
+  }
+}
+@media screen and (max-width: 800px) {
+  .problem {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  .problem {
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    .desc {
+      width: 70%;
+    }
+  }
+}

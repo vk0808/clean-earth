@@ -21,8 +21,8 @@ const ProblemIntro = () => {
           and hence lies littered in the city/town and finds its way to nearby
           drains and water bodies.
         </p>
+        <CauseEffect />
       </section>
-      <CauseEffect />
     </>
   );
 };
