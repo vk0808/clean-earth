@@ -165,11 +165,20 @@ p {
   .left {
     position: relative;
     min-height: 300px;
-    background: url('./components/Hero/waste-bg.png') no-repeat center center;
+    background: url('./components/Hero/bg-ellipse.svg') no-repeat center center;
     background-size: contain;    
   }
+  .left::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: url('./components/Hero/waste-bg.png') no-repeat center center;
+    background-size: contain;
+  }
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-transform: lowercase;
   }
   .hero-title::first-letter {
@@ -191,7 +200,6 @@ p {
     padding: 0 1rem;
   }
   .right {
-    margin-top: -4rem;
     text-align: center;
     padding: 2rem 1rem 1.5rem;
   }
@@ -217,11 +225,9 @@ p {
   }
   .hero-title {
     font-size: 3rem;
-    font-weight: 500;
     margin-bottom: var(--spacingDesktop);
   }
   .right {
-    margin-top: 0;
     text-align: left;
     padding: 4rem 0  0 4rem;
   }
