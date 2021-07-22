@@ -7,11 +7,13 @@
   --black: hsl(0deg 0% 2%);
   --lightGrey: hsl(0deg 0% 83%);
   --grey: hsl(0deg 0% 44%);
+  --grey-special: #eae6eb;
+  --red-special: #b4345c;
   --transition: all 0.3s linear;
   --spacing: 0.05rem;
   --spacingMobile: 0.5rem;
   --spacingDesktop: 2rem;
-  --radius: 1.5rem;
+  --radius: 0.75rem;
   --border: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -263,12 +265,52 @@ p {
   .sub-heading {
     margin-bottom: var(--spacingMobile);
   }
-
-  .listing li {
-    margin-bottom: calc(var(--spacingMobile) * 2);
-  }
 }
 
+// List 
+.list {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--grey-special);
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+
+  .btn {
+    background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background: var(--grey-special);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--red-special);
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+  }
+   
+  h4 {
+    text-transform: none;
+    line-height: 1.5;
+  }
+  p {
+    color: var(--grey);
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h4 {
+    margin-bottom: 0;
+  }
+
+}
 @media screen and (max-width: 800px) {
   .problem {
     padding-left: 2rem;
@@ -276,9 +318,6 @@ p {
     text-align: center;
   }
   .desc {
-    padding: 1rem;
-  }
-  .listing {
     padding: 1rem;
   }
 }
