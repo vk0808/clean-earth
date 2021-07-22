@@ -1,15 +1,15 @@
 // Variables
 :root {
-  --primaryColor: hsl(262deg 94% 51%);
-  --secondaryColor: hsl(168deg 83% 44%);
-  --offWhite: hsl(0deg 0% 95%);
-  --white: hsl(0deg 0% 100%);
-  --black: hsl(0deg 0% 2%);
-  --lightGrey: hsl(0deg 0% 83%);
-  --grey: hsl(0deg 0% 44%);
-  --grey-special: #eae6eb;
-  --red-special: #b4345c;
-  --transition: all 0.3s linear;
+  --primaryColor: hsl(262, 94%, 51%);
+  --secondaryColor: hsl(168, 83%, 44%);
+  --offWhite: hsl(0, 0%, 95%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 2%);
+  --lightGrey: hsl(0, 0%, 83%);
+  --grey: hsl(0, 0%, 44%);
+  --grey-special: hsl(288, 11%, 91%);
+  --red-special: hsl(341, 55%, 45%);
+  --transition: all 0.3s ease-in-out;
   --spacing: 0.05rem;
   --spacingMobile: 0.5rem;
   --spacingDesktop: 2rem;
@@ -158,15 +158,27 @@ p {
     }
   }
 }
+
+// Pledge Btn
 .pledge {
   text-transform: uppercase;
   letter-spacing: var(--spacing);
-  padding: 0.35rem 1rem;
+  padding: 0.75rem 2rem;
   background-color: var(--primaryColor);
   color: var(--white);
-  border: 1px solid var(--black);
+  border: 1px solid var(--primaryColor);
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
+  border-radius: 3px;
+  box-shadow: var(--light-shadow);
+
+  &:hover {
+    background: transparent;
+    color: var(--primaryColor);
+    transition: var(--transition);
+    border: 1px solid var(--primaryColor);
+    box-shadow: var(--dark-shadow);
+  }
 }
 @media screen and (max-width: 800px) {
   .links-container {
