@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { cause, effect } from "./info";
+import List from './List';
 
 const CauseEffect = () => {
+  const [causeList, setCauseList] = useState(cause);
+  const [effectList, setEffectList] = useState(effect);
   return (
     <div className="cause-effect">
       <section className="cause">
         <h3 className="sub-heading">The Cause</h3>
         <ol className="listing">
-          {cause.map((item) => {
-            const { id, title, description } = item;
+          {causeList.map((item) => {
             return (
-              <li key={id}>
-                <h3>{title}</h3>
-                <p className="cause-desc">{description}</p>
-              </li>
+              <List key={item.id} {...item} ></List>
             );
           })}
         </ol>
@@ -22,13 +21,9 @@ const CauseEffect = () => {
       <section className="effect">
         <h3 className="sub-heading">The Effect</h3>
         <ol className="listing">
-          {effect.map((item) => {
-            const { id, title, description } = item;
+          {effectList.map((item) => {
             return (
-              <li key={id}>
-                <h3>{title}</h3>
-                <p className="effect-desc">{description}</p>
-              </li>
+              <List key={item.id} {...item}></List>
             );
           })}
         </ol>
