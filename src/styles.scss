@@ -289,7 +289,11 @@ p {
     padding-right: 4rem;
 
     .desc, .listing {
-      width: 70%;
+      width: 80%;
     }
+  }
+  .cause-effect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

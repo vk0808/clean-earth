@@ -4,7 +4,7 @@ import { cause, effect } from "./info";
 
 const CauseEffect = () => {
   return (
-    <>
+    <div className="cause-effect">
       <section className="cause">
         <h3 className="sub-heading">The Cause</h3>
         <ol className="listing">
@@ -33,7 +33,7 @@ const CauseEffect = () => {
           })}
         </ol>
       </section>
-    </>
+    </div>
   );
 };
 
