@@ -22,6 +22,19 @@
 // Font family - Josefin Sans
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap');
 
+// Gallery
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+  height: calc(70vh - 80px);
+}
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-icon:hover {
+    color: var(--red-special);
+  }
+}
+
+
 // General Settings
 *,
 ::after,

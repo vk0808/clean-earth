@@ -1,6 +1,7 @@
 import React from "react";
 
 import CauseEffect from "./CauseEffect";
+import Gallery from "./Gallery";
 
 const ProblemIntro = () => {
   return (
@@ -22,6 +23,7 @@ const ProblemIntro = () => {
           drains and water bodies.
         </p>
         <CauseEffect />
+        <Gallery />
       </section>
     </>
   );

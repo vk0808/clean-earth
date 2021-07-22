@@ -57,3 +57,29 @@ export const effect = [
       "As waste decomposes, it can release gases that move up to the atmosphere and trap heat, leading to warmer climates. Greenhouse gases are one of the chief culprits behind the drastic weather changes occurring all over the world. From powerful storms, blistering heatwaves, and rising water levels, it has affected millions worldwide."
   }
 ];
+export const effectImage = [
+  {
+    original: "./images/Electronic_waste_at_Agbogbloshie.jpg",
+    thumbnail: './images/Electronic_waste_at_Agbogbloshie.jpg',
+  },
+  {
+    original: "./images/elephant_plastic.jpg",
+    thumbnail: './images/elephant_plastic.jpg',
+  },
+  {
+    original: "./images/garbage.jpg",
+    thumbnail: './images/garbage.jpg',
+  },
+  {
+    original: "./images/image.jpg",
+    thumbnail: './images/image.jpg',
+  },
+  {
+    original: "./images/india-plastic-waste.jpg",
+    thumbnail: './images/india-plastic-waste.jpg',
+  },
+  {
+    original: "./images/pexels-lucien-wanda.jpg",
+    thumbnail: './images/pexels-lucien-wanda.jpg',
+  }
+];
