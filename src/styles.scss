@@ -344,6 +344,11 @@ p {
     margin-left: 1rem;
     align-self: center;
     min-width: 2rem;
+  
+    &:hover {
+      background: var(--secondaryColor);
+      color: var(--black); 
+    }
   }
    
   h4 {
