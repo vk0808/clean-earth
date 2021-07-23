@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
+import {Link} from 'react-scroll'
 
 import { ReactComponent as Logo } from "./logo.svg";
 import "../../styles.scss";
@@ -34,14 +35,14 @@ const Navbar = () => {
           <div className="nav-menu links-container" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>
               <li>
-                <a className="nav-link" href="#problem">
+                <Link className="nav-link" to="problem" spy={true} smooth={true}>
                   problem
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="nav-link" href="#solution">
+                <Link className="nav-link" to="solution" spy={true} smooth={true}>
                   solution
-                </a>
+                </Link>
               </li>
               <li>
                 <button className="pledge" type="button">
