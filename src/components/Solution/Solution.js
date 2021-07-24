@@ -7,9 +7,8 @@ const SolutionIntro = () => {
         <h3 className="sub-heading">The Solution</h3>
         <p className="desc">
           Waste is everybody's responsibility. Solving waste disposal problem
-          requires a large-scale continuous effort from all three entities -
-          Manufacturer, Consumer and the Municipal Governement. Manufacturers
-          need to take responsibility for their waste by operating in a
+          requires a large-scale continuous effort. Manufacturers need to take
+          responsibility for their waste by operating in a
           <strong> circular economy</strong> as much as possible and find ways
           to adapt to modern tried and tested technologies to beyond
           conventional methods of producing products.

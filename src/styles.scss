@@ -310,14 +310,27 @@ p {
 .problem {
   background: var(--white);
   margin-top: var(--spacingDesktop);
+}
+.problem, .solution {
+  padding-bottom: calc(var(--spacingDesktop) * 2);
+}
+.problem, .solution {
   padding-top: calc(var(--spacingDesktop) * 2);
 
-  .second-para {
-    margin-top: var(--spacingMobile);
+  .second-para, .third-para {
+    margin-top: calc(var(--spacingMobile) * 2);
+  }
+}
+.solution {
+  .sub-heading {
+    margin-bottom: calc(var(--spacingMobile) * 2);
   }
 }
 
 // The Cause
+.cause-effect {
+  padding-bottom: var(--spacingDesktop);
+}
 .cause, .effect {
   margin-top: calc(var(--spacingDesktop) * 1.5);
 
@@ -376,7 +389,7 @@ p {
 
 }
 @media screen and (max-width: 800px) {
-  .problem {
+  .problem, .solution {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
@@ -387,10 +400,11 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .problem {
+  .problem, .solution {
     padding-left: 4rem;
     padding-right: 4rem;
-
+    text-align: left;
+  
     .desc, .listing {
       width: 80%;
     }
