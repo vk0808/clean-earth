@@ -8,7 +8,7 @@ const ProblemIntro = () => {
     <>
       <section className="problem">
         <h3 className="sub-heading">The Problem</h3>
-        <h2 className="main-heading">Global waste crisis</h2>
+        <h2 className="main-heading">India's waste crisis</h2>
         <p className="desc">
           Waste Management is a major problem in India. According to official
           estimations, around 68.8 million tons of Municipal Solid Waste (MSW)

@@ -5,6 +5,7 @@ const SolutionIntro = () => {
     <>
       <section className="solution">
         <h3 className="sub-heading">The Solution</h3>
+        <h2 className="main-heading">Sustainable waste management</h2>
         <p className="desc">
           Waste is everybody's responsibility. Solving waste disposal problem
           requires a large-scale continuous effort. Manufacturers need to take
