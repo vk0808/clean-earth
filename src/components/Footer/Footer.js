@@ -29,6 +29,23 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="footer-credit">
+        <div className="footer-left">
+          <p className="copyright">Copyright &copy; 2021 Clean Earth</p>
+        </div>
+        <div className="footer-right">
+          <p className="site-author">
+            <span>Site by: </span>
+            <a
+              href="https://github.com/vk0808/"
+              target="_blank"
+              className="author"
+            >
+              Vinod Kumar R
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
