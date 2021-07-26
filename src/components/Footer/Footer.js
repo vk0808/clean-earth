@@ -15,16 +15,16 @@ const Footer = () => {
         <div className="footer-right">
           <ul className="social-links">
             <li>
-              <FaFacebook size={25} />
+              <FaFacebook size={20} />
             </li>
             <li>
-              <FaTwitter size={25} />
+              <FaTwitter size={20} />
             </li>
             <li>
-              <GrInstagram size={25} />
+              <GrInstagram size={20} />
             </li>
             <li>
-              <FaYoutube size={25} />
+              <FaYoutube size={20} />
             </li>
           </ul>
         </div>

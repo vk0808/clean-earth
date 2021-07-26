@@ -126,7 +126,7 @@ p {
   background-image: linear-gradient(90deg, #c7f7ee 0%, #c09efc 100%);
 }
 a.nav-link.active {
-  color: var(--red-special) !important;
+  color: var(--black) !important;
 }
 .nav-center {
   .nav-header {
@@ -163,7 +163,7 @@ a.nav-link.active {
     align-items: center;
 
     a {
-      color: var(--black);
+      color: var(--grey);
       text-transform: uppercase;
       letter-spacing: var(--spacing);
       font-weight: 600;
@@ -440,16 +440,24 @@ a.nav-link.active {
   }
 }
 .footer-content {
-  background: var(--grey);
+  background: #161a1d;
   display: flex;
   padding-top: var(--spacingDesktop);
+
+  .footer-left .logo {
+    width: 100px;
+
+    text#Clean_Earth {
+      fill: var(--grey);
+  }
+  }
 
   .social-links {
     display: flex;
     gap: 1rem;
 
     svg {
-      fill: var(--grey-special);
+      fill: var(--grey);
     
       &:hover {
         fill: var(--secondaryColor);
