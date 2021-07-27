@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 import { ReactComponent as Logo } from "./logo.svg";
-import "../../styles.scss";
+import "../../style/main.scss";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
