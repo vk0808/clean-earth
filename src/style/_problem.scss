@@ -1,0 +1,110 @@
+// Problem
+.sub-heading {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.main-heading {
+  text-transform: uppercase;
+  margin-bottom: $spacingMobile * 2;
+}
+.problem {
+  background: $white;
+  margin-top: $spacingDesktop;
+}
+.problem, .solution {
+  padding-bottom: $spacingDesktop * 2;
+  padding-top: $spacingDesktop * 2;
+
+  .second-para, .third-para {
+    margin-top: $spacingMobile * 2;
+  }
+}
+
+// The Cause
+.cause-effect {
+  padding-bottom: $spacingDesktop;
+}
+.cause, .effect {
+  margin-top: $spacingDesktop * 1.5;
+
+  .sub-heading {
+    margin-bottom: $spacingMobile;
+  }
+}
+
+// List 
+.list {
+  padding: 1rem 1.5rem;
+  border: 2px solid $grey-special;
+  margin-bottom: 1rem;
+  border-radius: $radius;
+  box-shadow: $light-shadow;
+
+  .btn {
+    background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background: $grey-special;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $red-special;
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+  
+    &:hover {
+      background: $secondaryColor;
+      color: $black; 
+    }
+  }
+   
+  h4 {
+    text-transform: none;
+    line-height: 1.5;
+  }
+  p {
+    color: $grey;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h4 {
+    margin-bottom: 0;
+  }
+
+}
+
+@include media-sm {
+  .problem, .solution {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+  .desc {
+    padding: 1rem;
+  }
+}
+
+@include media-lg {
+  .problem, .solution {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: left;
+  
+    .desc, .listing {
+      width: 80%;
+    }
+  }
+  .cause-effect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

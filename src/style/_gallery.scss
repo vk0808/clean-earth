@@ -1,0 +1,39 @@
+// react-image-gallery Default styles 
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.image-gallery.image-gallery-using-mouse {
+  margin-top: $spacingDesktop;
+}
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+}
+@media screen and (max-width: 500px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: calc(50vh - 80px);
+  }
+  .fullscreen .image-gallery-slide .image-gallery-image {
+    object-fit: contain;
+    height: calc(50vh - 80px) !important;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: calc(70vh - 80px);
+  }
+  .fullscreen .image-gallery-slide .image-gallery-image {
+    height: calc(100vh - 80px) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    height: calc(60vh - 80px);
+  }
+  .fullscreen .image-gallery-slide .image-gallery-image {
+    height: calc(100vh - 80px) !important;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-icon:hover {
+    color: $red-special;
+  }
+}

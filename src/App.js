@@ -1,5 +1,5 @@
 import Index from "./pages/Index";
-import "./styles.scss";
+import "./style/main.scss";
 
 export default function App() {
   return (

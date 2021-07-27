@@ -1,0 +1,76 @@
+// Footer
+.footer-img {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('./components/Footer/footer-bg.png') no-repeat center center;
+    background-size: contain;
+  }
+}
+.footer-content, .footer-credit {
+  background: $bgFooter;
+  display: flex;
+  padding-top: $spacingDesktop;
+
+  .footer-left .logo text#Clean_Earth {
+    fill: $grey;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+
+    svg {
+      fill: $grey;
+    
+      &:hover {
+        fill: $secondaryColor;
+      }
+    }
+  }
+}
+.footer-credit {
+  padding-top: 0.25rem;
+  border-top: 1px solid $grey;
+  gap: 0.5rem !important;
+
+  .author {
+    color: $grey;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+@include media-sm {
+  .footer-img {
+    min-height: 100px;
+  }
+  .footer-content, .footer-credit {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    
+    .social-links {
+      justify-content: center;
+    }
+  }
+}
+@include media-lg {
+  .footer-img {
+    min-height: 150px;
+  }
+  .footer-content, .footer-credit {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-right {
+    display: flex;
+    align-self: center;
+  }
+}

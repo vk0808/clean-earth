@@ -1,0 +1,39 @@
+@import './variables';
+@import './media';
+@import './reset';
+@import './navbar';
+@import './gallery';
+@import './hero';
+@import './problem';
+@import './footer';
+
+// Font family - Josefin Sans
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap');
+
+// Logo size
+.logo {
+  width: 100px;
+}
+
+// Pledge Btn
+.pledge {
+  text-transform: uppercase;
+  letter-spacing: $spacing;
+  padding: 0.75rem 2rem;
+  background-color: $primaryColor;
+  color: $white;
+  border: 1px solid $primaryColor;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: $light-shadow;
+  cursor: pointer;
+
+  &:hover {
+    background: transparent;
+    color: $primaryColor;
+    transition: $transition;
+    border: 1px solid $primaryColor;
+    box-shadow: $dark-shadow;
+  }
+}
