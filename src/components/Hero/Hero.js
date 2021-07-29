@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   return (
@@ -14,9 +15,11 @@ const Hero = () => {
           pledge to reduce waste by incorporating
           <strong> 5 R principle</strong>.
         </p>
-        <button type="button" className="pledge">
-          Take pledge
-        </button>
+        <HashLink smooth to="pledge">
+          <button type="button" className="pledge">
+            Take pledge
+          </button>
+        </HashLink>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 import { ReactComponent as Logo } from "./logo.svg";
 import "../../style/main.scss";
@@ -21,6 +21,12 @@ const Navbar = () => {
 
   window.addEventListener("scroll", changeNavbarBg);
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
@@ -35,7 +41,9 @@ const Navbar = () => {
       <nav className={navbar ? "navbar nav-active" : "navbar"}>
         <div className="nav-center">
           <div className="nav-header">
-            <Logo className="logo" />
+            <HashLink smooth to="/">
+              <Logo className="logo" />
+            </HashLink>
             <button
               className="nav-toggle"
               onClick={() => setShowLinks(!showLinks)}
@@ -46,29 +54,33 @@ const Navbar = () => {
           <div className="nav-menu links-container" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>
               <li>
-                <Link
+                <NavHashLink
                   className="nav-link"
-                  to="problem"
-                  spy={true}
-                  smooth={true}
+                  to={"/#problem"}
+                  smooth
+                  activeClassName="active"
+                  scroll={(el) => scrollWithOffset(el)}
                 >
                   problem
-                </Link>
+                </NavHashLink>
               </li>
               <li>
-                <Link
+                <NavHashLink
                   className="nav-link"
-                  to="solution"
-                  spy={true}
-                  smooth={true}
+                  to={"/#solution"}
+                  smooth
+                  activeClassName="active"
+                  scroll={(el) => scrollWithOffset(el)}
                 >
                   solution
-                </Link>
+                </NavHashLink>
               </li>
               <li>
-                <button className="pledge" type="button">
-                  take pledge
-                </button>
+                <HashLink smooth to="pledge">
+                  <button className="pledge" type="button">
+                    take pledge
+                  </button>
+                </HashLink>
               </li>
             </ul>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 const SolutionIntro = () => {
   return (
     <>
-      <section className="solution">
+      <section id="solution" className="solution">
         <h3 className="sub-heading">The Solution</h3>
         <h2 className="main-heading">Sustainable waste management</h2>
         <p className="desc">

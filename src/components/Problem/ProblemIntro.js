@@ -6,7 +6,7 @@ import Gallery from "./Gallery";
 const ProblemIntro = () => {
   return (
     <>
-      <section className="problem">
+      <section id="problem" className="problem">
         <h3 className="sub-heading">The Problem</h3>
         <h2 className="main-heading">India's waste crisis</h2>
         <p className="desc">

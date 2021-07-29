@@ -49,7 +49,7 @@
     .nav-link {
       cursor: pointer;
 
-      &.active {
+      &.active, &:hover {
         color: $black !important;
       }
     }
