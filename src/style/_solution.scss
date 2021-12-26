@@ -32,9 +32,13 @@
 }
 .content {
   display: flex;
+  
 
   @include media-sm {
     flex-direction: column;
+  }
+  @include media-lg {
+    width: 80%;
   }
 
   .content_left {

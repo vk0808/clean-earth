@@ -5,7 +5,7 @@
   .left {
     position: relative;
     min-height: 200px;
-    background: url('../components/Hero/bg-ellipse.svg') no-repeat center center;
+    background: url('./images/bg-ellipse.svg') no-repeat center center;
     background-size: contain;
     z-index: -2; 
   }
@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     left: 0;
-    background: url('../components/Hero/waste-bg.png') no-repeat center center;
+    background: url('./images/waste-bg.png') no-repeat center center;
     background-size: contain;
     z-index: -3;
   }
