@@ -1,0 +1,56 @@
+.img-container {
+  display: flex;
+  align-items: center;
+  
+  @include media-sm {
+    flex-direction: column;
+  }
+  
+  img {
+    width: 450px;
+    
+    @include media-sm {
+      width: 100%;
+    }
+  }
+
+  .benefits {
+    text-align: left;
+
+    @include media-sm {
+      text-align: center;
+    }
+
+    ul {
+      list-style: auto;
+
+      li {
+        color: $grey;
+      }
+    }
+  }
+}
+.content {
+  display: flex;
+
+  @include media-sm {
+    flex-direction: column;
+  }
+
+  .content_left {
+    margin-top: 4rem;
+  }
+
+  img {
+    width: 300px;
+
+    @include media-sm {
+      width: 100%;
+    }
+  }
+}
+.refernce_links {
+  text-decoration: underline;
+  text-decoration-color: $secondaryColor;
+  color: $grey;
+}

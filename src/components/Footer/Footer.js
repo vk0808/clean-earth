@@ -39,6 +39,7 @@ const Footer = () => {
             <a
               href="https://github.com/vk0808/"
               target="_blank"
+              rel="noreferrer"
               className="author"
             >
               Vinod Kumar R

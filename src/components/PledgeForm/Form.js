@@ -1,10 +1,11 @@
 import React from "react";
+import { Formik } from "formik";
 
 const Form = () => {
   return (
-    <>
-      <p>Form</p>
-    </>
+    <section className="pledge-form">
+      <div className="form"></div>
+    </section>
   );
 };
 
